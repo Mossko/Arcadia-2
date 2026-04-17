@@ -2,12 +2,21 @@
 
 namespace App\Controller;
 
-class PageController
+class PageController extends controller
 {
-    public function home()
+    public function home(): void
     {
-        $filePath = APP_ROOT . "/templates/page/home.php";
+        $gretting = "Hello";
+        $name = "Moktar";
 
-        require_once $filePath;
+        $this->render("page/home", [
+            "gretting" => $gretting,
+            "name" => $name,
+        ]);
+    }
+
+    public function about(): void
+    {
+        $this->render("page/about");
     }
 }
