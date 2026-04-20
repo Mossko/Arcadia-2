@@ -4,7 +4,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 define('APP_ROOT', dirname(__DIR__));
 
-use App\Controller\PageController;
+use App\routing\Router;
 
-$pagecontroller = new PageController();
-$pagecontroller->home();
+$router = new Router();
+$router->handleRequest($_SERVER["REQUEST_URI"]);
