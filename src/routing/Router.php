@@ -2,6 +2,8 @@
 
 namespace App\routing;
 
+use App\Controller\ErrorController;
+
 class Router
 {
     private $routes;
@@ -12,14 +14,28 @@ class Router
 
     public function handleRequest(string $uri)
     {
-        $path = $this->normalizePath($uri);
-        $route = $this->routes[$path];
+        try {
+            $path = $this->normalizePath($uri);
+            if (!isset($this->routes[$path])) {
+                throw new \Exception("La route n'existe pas");
+            }
+            $route = $this->routes[$path];
 
-        $controllerPath = $route["controller"];
-        $action = $route["action"];
+            $controllerPath = $route["controller"];
+            $action = $route["action"];
 
-        $controller = new $controllerPath();
-        $controller->$action();
+            if (!class_exists($controllerPath)) {
+                throw new \Exception("La route n''existe pas");
+            }
+
+            $controller = new $controllerPath();
+            if (!method_exists($controller, $action)) {
+                throw new \Exception("l'action n'existe pas");
+            }
+            $controller->$action();
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
     }
 
     public static function normalizePath(string $uri)
