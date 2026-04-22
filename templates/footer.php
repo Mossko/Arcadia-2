@@ -1,0 +1,40 @@
+<footer>
+    <section class="horaires">
+        <table>
+            <tr>
+                <th></th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Lundi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Mardi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Mercredi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Jeudi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Vendredi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Samedi</th>
+                <th>Horaires</th>
+            </tr>
+            <tr>
+                <th>Dimanche</th>
+                <th>Horaires</th>
+            </tr>
+        </table>
+    </section>
+</footer>
+
+</html>
