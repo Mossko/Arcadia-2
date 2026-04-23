@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
             <img src="" alt="Logo de ma page">
         </a>
         <!-- Navigation -->
-        <nav class="nav1">
+        <nav class="menu">
             <ul>
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Service</a></li>
