@@ -15,8 +15,13 @@ class PageController extends controller
         ]);
     }
 
-    public function about(): void
+    public function contact(): void
     {
-        $this->render("page/about");
+        $this->render("page/contact");
+    }
+
+    public function service(): void
+    {
+        $this->render("page/service");
     }
 }

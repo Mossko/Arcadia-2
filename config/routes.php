@@ -1,6 +1,7 @@
 <?php
 
 return [
-    "/about/" => ["controller" => "App\Controller\PageController", "action" => "about"],
+    "/contact/" => ["controller" => "App\Controller\PageController", "action" => "contact"],
     "/" => ["controller" => "App\Controller\PageController", "action" => "home"],
+    "/service/" => ["controller" => "App\Controller\PageController", "action" => "service"],
 ];
