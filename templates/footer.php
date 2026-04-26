@@ -34,8 +34,8 @@
                 <th>Horaires</th>
             </tr>
         </table>
-        <p class="droit">&copy; 2026 Tout droits réservés </p>
     </section>
+    <p class="droit">&copy; 2026 Tout droits réservés </p>
 </footer>
 
 </html>

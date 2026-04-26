@@ -16,11 +16,11 @@
         <!-- Navigation -->
         <nav class="menu">
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Habitats</a></li>
-                <li><a href="">Connexion</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/service">Service</a></li>
+                <li><a href="/habitat">Habitats</a></li>
+                <li><a href="/connexion">Connexion</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
     </header>

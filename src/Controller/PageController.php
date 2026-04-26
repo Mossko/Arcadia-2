@@ -24,4 +24,14 @@ class PageController extends controller
     {
         $this->render("page/service");
     }
+
+    public function connexion(): void
+    {
+        $this->render("page/connexion");
+    }
+
+    public function habitat(): void
+    {
+        $this->render("page/habitat");
+    }
 }
