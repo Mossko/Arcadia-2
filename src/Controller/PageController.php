@@ -34,4 +34,19 @@ class PageController extends controller
     {
         $this->render("page/habitat");
     }
+
+    public function savane(): void
+    {
+        $this->render("page/habitats/savane");
+    }
+
+    public function marais(): void
+    {
+        $this->render("page/habitats/marais");
+    }
+
+    public function jungle(): void
+    {
+        $this->render("page/habitats/jungle");
+    }
 }

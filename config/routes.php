@@ -6,4 +6,7 @@ return [
     "/service/" => ["controller" => "App\Controller\PageController", "action" => "service"],
     "/connexion/" => ["controller" => "App\Controller\PageController", "action" => "connexion"],
     "/habitat/" => ["controller" => "App\Controller\PageController", "action" => "habitat"],
+    "/savane/" => ["controller" => "App\Controller\PageController", "action" => "savane"],
+    "/marais/" => ["controller" => "App\Controller\PageController", "action" => "marais"],
+    "/jungle/" => ["controller" => "App\Controller\PageController", "action" => "jungle"],
 ];

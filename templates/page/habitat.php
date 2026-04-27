@@ -5,21 +5,21 @@
     <H1>Découvrez nos habitats ...</H1>
 
     <div class="marais">
-        <a href="">
+        <a href="/marais">
             <h2>Marais</h2>
             <img src="" alt="">
         </a>
     </div>
 
     <div class="jungle">
-        <a href="">
+        <a href="/jungle">
             <h2>Jungle</h2>
             <img src="" alt="">
         </a>
     </div>
 
     <div class="savane">
-        <a href="">
+        <a href="/savane">
             <h2>Savane</h2>
             <img src="" alt="">
         </a>
