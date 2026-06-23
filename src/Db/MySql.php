@@ -1,42 +1,20 @@
 <?php
 
-namespace App\Db;
+$dsn = 'localhost';
+$user = 'postgres';
+$password = 'Foulematou.95';
+try {
+    $dsn = "pgsql:host=localhost;port=5432;dbname=Arcadi_bdd;";
+    // make a database connection
+    $DDB = $bdd = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
-class Mysql
-{
-    private string $dbName;
-    private string $dbUser;
-    private string $dbPassword;
-    private string $dbPort;
-    private string $dbHost;
-
-    private ?\PDO $pdo = null;
-    private static ?self $_instance = null;
-
-    private function __construct()
-    {
-        $dbConf = parse_ini_file(APP_ROOT . "/" . APP_ENV);
-
-        $this->dbHost = $dbConf["db_host"];
-        $this->dbUser = $dbConf["db_user"];
-        $this->dbPassword = $dbConf["db_password"];
-        $this->dbPort = $dbConf["db_port"];
-        $this->dbName = $dbConf["db_name"];
+    if ($bdd) {
+        //echo "Connected to the Arcadia database successfully!";
     }
-
-    public static function getInstance(): self
-    {
-        if (is_null(self::$_instance)) {
-            self::$_instance = new Mysql();
-        }
-
-        return self::$_instance;
-    }
-    public function getPDO(): \PDO
-    {
-        if (is_null($this->pdo)) {
-            $this->pdo = new \PDO("pgsql:dbname={$this->dbName};host={$this->dbHost}:{$this->dbPort}", $this->dbUser, $this->dbPassword);
-        }
-        return $this->pdo;
+} catch (PDOException $e) {
+    die($e->getMessage());
+} finally {
+    if ($bdd) {
+        $bdd = NULL;
     }
 }
