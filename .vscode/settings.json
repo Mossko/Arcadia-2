@@ -7,7 +7,7 @@
       "port": 5432,
       "driver": "PostgreSQL",
       "name": "Arcadia 2",
-      "database": "Arcadi bdd",
+      "database": "Arcadi_bdd",
       "username": "postgres",
       "password": "Foulematou.95"
     }
