@@ -2,17 +2,14 @@
 
 namespace App\Controller;
 
+use App\repository\RepositoryService;
+
 class PageController extends controller
 {
     public function home(): void
     {
-        $gretting = "Hello";
-        $name = "Moktar";
 
-        $this->render("page/home", [
-            "gretting" => $gretting,
-            "name" => $name,
-        ]);
+        $this->render("page/home");
     }
 
     public function contact(): void
