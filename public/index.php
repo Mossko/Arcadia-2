@@ -1,5 +1,6 @@
 <?php
 
+
 require_once __DIR__ . "/../vendor/autoload.php";
 require_once __DIR__ . "/../src/Db/MySql.php";
 
@@ -10,5 +11,3 @@ use App\routing\Router;
 
 $router = new Router();
 $router->handleRequest($_SERVER["REQUEST_URI"]);
-
-use App\Db;

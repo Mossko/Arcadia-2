@@ -37,5 +37,6 @@
     </section>
     <p class="droit">&copy; 2026 Tout droits réservés </p>
 </footer>
+</body>
 
 </html>

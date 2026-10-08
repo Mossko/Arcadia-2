@@ -1,0 +1,52 @@
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    background-color: blue;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    background-color: white;
+}
+
+/* Logo */
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Navigation */
+
+.menu ul {
+    display: flex;
+
+    gap: 25px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+
+.menu a:hover {
+    text-decoration: underline;
+}

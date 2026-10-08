@@ -2,9 +2,7 @@
 
 namespace App\Controller;
 
-use App\Controller\PageController;
-
-class controller
+class Controller
 {
     protected function render(string $path, array $params = []): void
     {

@@ -2,9 +2,7 @@
 
 namespace App\Controller;
 
-use App\repository\RepositoryService;
-
-class PageController extends controller
+class PageController extends Controller
 {
     public function home(): void
     {

@@ -1,4 +1,11 @@
 RewriteEngine On
+
 RewriteBase /
 
+# Ne pas réécrire les fichiers qui existent réellement
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Toutes les autres requêtes passent par index.php
 RewriteRule ^ index.php [QSA,L]

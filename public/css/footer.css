@@ -1,0 +1,59 @@
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    padding: 40px;
+
+    margin-top: 50px;
+}
+
+
+/* ========================= */
+/* HORAIRES */
+/* ========================= */
+
+.horaires {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+
+.horaires h2 {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.horaires table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+
+.horaires th,
+.horaires td {
+    padding: 12px;
+
+    border: 1px solid white;
+
+    text-align: center;
+}
+
+
+/* ========================= */
+/* COPYRIGHT */
+/* ========================= */
+
+.droit {
+    text-align: center;
+
+    margin-top: 30px;
+}

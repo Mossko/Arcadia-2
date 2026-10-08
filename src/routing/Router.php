@@ -1,6 +1,6 @@
 <?php
 
-namespace App\routing;
+namespace App\Routing;
 
 use App\Controller\ErrorController;
 
